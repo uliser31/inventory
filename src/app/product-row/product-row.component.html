@@ -1,0 +1,28 @@
+<div class="mirow" appHover>
+<div class="content" >
+    <div class="header">{{product.name}}</div>
+    <div class="meta">
+        <div class="prodcut-sku">SKU#{{product.sku}}</div>
+    </div>
+
+    <div class="description">
+        <product-dep [product]="product"> </product-dep>
+    </div>
+</div>
+<price-display [price]="product.price"> </price-display> 
+</div>
+    
+
+<!--
+<div class="content">
+    <div class="header">{{product.name}}</div>
+    <div class="meta">
+        <div class="product-sku">SKU # {{product.sku}}</div>
+        <price-display [price]="product.price"> </price-display> 
+        <div class="description">
+            <product-department [product]="product"> 
+            </product-department>
+        </div>
+    </div>   
+</div>    
+-->

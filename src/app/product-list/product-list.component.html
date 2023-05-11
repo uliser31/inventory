@@ -1,0 +1,11 @@
+<div class="ui items">
+    <product-row 
+       *ngFor="let myProduct of productList"
+       [product]="myProduct"
+       [ngStyle]="{'background-color':(isSelected(myProduct))?'magenta':'yellow'}"
+       (click)="clicked(myProduct)">
+    </product-row>
+    
+</div>
+
+ 
